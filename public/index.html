@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f4f3eb">
+    <meta name="description" content="Yakino. A new creative perspective is on its way. Our agency website is coming soon.">
+    <meta property="og:title" content="Yakino — Something good is taking shape.">
+    <meta property="og:description" content="A new creative perspective is on its way. Stay curious.">
+    <meta property="og:type" content="website">
+    <title>Yakino — Coming Soon</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <style>
+      :root { color-scheme: light; --paper:#f4f3eb; --ink:#25263b; --purple:#7563ef; --line:#d8d8ce; }
+      * { box-sizing:border-box; }
+      body { margin:0; background:var(--paper); color:var(--ink); font-family:Arial, Helvetica, sans-serif; -webkit-font-smoothing:antialiased; }
+      ::selection { background:#d3cef9; }
+      .page { max-width:1600px; min-height:100svh; margin:auto; padding:36px 5vw 25px; display:flex; flex-direction:column; }
+      header { display:flex; align-items:center; justify-content:space-between; gap:24px; }
+      .brand { display:flex; align-items:center; gap:11px; font-size:34px; letter-spacing:-1.9px; font-weight:800; }
+      .mark { width:29px; height:29px; }
+      .status { display:flex; gap:10px; align-items:center; border:1px solid var(--line); border-radius:40px; padding:11px 15px; font-size:11px; font-weight:600; letter-spacing:1.2px; text-transform:uppercase; }
+      .dot { width:7px; height:7px; border-radius:50%; background:var(--purple); box-shadow:0 0 0 4px #7563ef12; }
+      main { flex:1; display:grid; grid-template-columns:1.15fr 1fr; align-items:center; gap:2vw; padding:76px 0 72px; }
+      .eyebrow { display:flex; gap:13px; align-items:center; font-size:11px; letter-spacing:2.1px; text-transform:uppercase; margin:0 0 27px; font-weight:600; }
+      .eyebrow::before { content:''; width:30px; height:1px; background:var(--purple); }
+      h1 { font-size:clamp(58px,6.9vw,106px); line-height:1.01; letter-spacing:-.067em; font-weight:500; margin:0; }
+      h1 em { font-family:Georgia, 'Times New Roman', serif; color:var(--purple); font-weight:400; letter-spacing:-.07em; }
+      .intro { max-width:345px; margin:29px 0 0; font-size:16px; line-height:1.75; color:#6d6e79; }
+      .note { margin-top:42px; display:inline-flex; align-items:center; gap:14px; font-size:13px; }
+      .note span:first-child { display:grid; place-items:center; width:32px; height:32px; border:1px solid var(--line); border-radius:50%; font-size:16px; }
+      .art { position:relative; aspect-ratio:1; width:100%; max-width:540px; justify-self:end; display:grid; place-items:center; isolation:isolate; }
+      .orbit { position:absolute; width:91%; height:91%; border:1px solid #d9d8d1; border-radius:50%; }
+      .orbit::before { content:''; position:absolute; width:8px; height:8px; background:var(--ink); border-radius:50%; top:14%; left:14%; }
+      .orbit::after { content:'Y / 01'; position:absolute; right:-5px; bottom:19%; background:var(--paper); padding:10px 4px; font-size:10px; letter-spacing:1px; font-family:monospace; }
+      .bloom { width:77%; height:77%; overflow:visible; animation:turn 100s linear infinite; filter:drop-shadow(0 22px 16px #47408e16); }
+      .center-label { position:absolute; font-family:monospace; font-size:10px; letter-spacing:2px; bottom:0; text-transform:uppercase; color:#7c7d86; }
+      .spark { position:absolute; top:7%; right:7%; font-size:43px; line-height:1; font-weight:200; }
+      footer { border-top:1px solid var(--line); padding-top:22px; display:flex; align-items:center; justify-content:space-between; gap:24px; color:#787985; font-size:11px; }
+      .footer-note { color:var(--ink); }
+      .footer-note span { color:var(--purple); margin-right:7px; }
+      @keyframes turn { to { transform:rotate(360deg); } }
+      @media (min-width:1500px) { .page { padding-left:75px; padding-right:75px; } }
+      @media (max-width:760px) {
+        .page { padding:25px 7vw 23px; }
+        .brand { font-size:30px; }
+        .status { font-size:9px; padding:10px 12px; }
+        main { grid-template-columns:1fr; padding:65px 0 40px; gap:30px; }
+        h1 { font-size:clamp(58px,12vw,85px); }
+        .intro { font-size:15px; max-width:330px; }
+        .note { margin-top:26px; }
+        .art { width:85%; max-width:380px; justify-self:center; }
+        footer { font-size:10px; flex-wrap:wrap; gap:13px; }
+      }
+      @media (prefers-reduced-motion:reduce) { .bloom { animation:none; } }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <div class="brand" aria-label="Yakino">
+          <svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M3 3h9l5 9 5-9h8L17 29H8l5-10Z" fill="currentColor"/></svg>
+          yakino<span style="color:var(--purple)">.</span>
+        </div>
+        <div class="status"><span class="dot" aria-hidden="true"></span>Website in the making</div>
+      </header>
+      <main>
+        <section aria-labelledby="headline">
+          <p class="eyebrow">A new chapter is coming</p>
+          <h1 id="headline">Something<br>good is<br><em>taking shape.</em></h1>
+          <p class="intro">A little curiosity. A fresh perspective.<br>We’re putting the finishing touches on our new creative home.</p>
+          <div class="note"><span aria-hidden="true">↗</span><span>Coming soon. Stay curious.</span></div>
+        </section>
+        <div class="art" role="img" aria-label="A sculptural violet bloom, slowly turning inside a fine circular orbit">
+          <div class="orbit"></div><span class="spark" aria-hidden="true">✳</span>
+          <svg class="bloom" viewBox="0 0 500 500" aria-hidden="true">
+            <defs>
+              <linearGradient id="petal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#b6a9ff"/><stop offset=".47" stop-color="#8572ef"/><stop offset="1" stop-color="#4d38b4"/></linearGradient>
+              <radialGradient id="core"><stop stop-color="#3c278f"/><stop offset="1" stop-color="#7560d9"/></radialGradient>
+              <path id="leaf" d="M250 250C183 225 161 121 207 45C256 14 297 73 291 137C286 192 268 226 250 250Z"/>
+            </defs>
+            <g fill="url(#petal)">
+              <use href="#leaf"/><use href="#leaf" transform="rotate(30 250 250)"/><use href="#leaf" transform="rotate(60 250 250)"/><use href="#leaf" transform="rotate(90 250 250)"/><use href="#leaf" transform="rotate(120 250 250)"/><use href="#leaf" transform="rotate(150 250 250)"/><use href="#leaf" transform="rotate(180 250 250)"/><use href="#leaf" transform="rotate(210 250 250)"/><use href="#leaf" transform="rotate(240 250 250)"/><use href="#leaf" transform="rotate(270 250 250)"/><use href="#leaf" transform="rotate(300 250 250)"/><use href="#leaf" transform="rotate(330 250 250)"/>
+            </g>
+            <circle cx="250" cy="250" r="32" fill="url(#core)"/>
+          </svg>
+          <span class="center-label">Good things take a little shaping.</span>
+        </div>
+      </main>
+      <footer><span>© 2026 Yakino. All rights reserved.</span><span class="footer-note"><span aria-hidden="true">✳</span> A fresh perspective, on the way.</span><span>Made with intention.</span></footer>
+    </div>
+  </body>
+</html>
